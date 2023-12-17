@@ -2,40 +2,17 @@ const mongoose = require("mongoose");
 
 const userSchema = mongoose.Schema(
   {
-    rfid: {
+    username: {
       type: String,
-    },
-    firstname: {
-      type: String,
-      required: [true, "Please enter first name"],
-    },
-    lastname: {
-      type: String,
-      required: [true, "Please enter last name"],
     },
     email: {
       type: String,
-      required: [true, "Please enter email"],
-    },
-    contact: {
-      type: String,
-      required: [true, "Please enter contact"],
     },
     password: {
       type: String,
-      required: [true, "Please enter password"],
     },
-    gender: {
+    userStatus: {
       type: String,
-    },
-
-    points: {
-      default: "1000",
-      type: String,
-    },
-    type: {
-      type: String,
-      default: "user",
     },
   },
   {
