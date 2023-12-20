@@ -78,7 +78,7 @@ app.post("/loan", async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
-  
+  });
 //login
 app.post("/login", async (req, res) => {
   const { email, password } = req.body;
