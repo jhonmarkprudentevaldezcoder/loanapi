@@ -63,10 +63,10 @@ app.get("/loan/user", async (req, res) => {
 
 //add loan
 app.post("/loan", async (req, res) => {
-  const { email } = req.body;
+  const { username } = req.body;
   try {
     // Check if the email is already taken
-    const existingUser = await Loans.findOne({ email });
+    const existingUser = await Loans.findOne({ username });
 
     if (existingUser) {
       return res.status(400).json({ message: "Email already taken." });
