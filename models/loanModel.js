@@ -62,7 +62,7 @@ const loanSchema = mongoose.Schema(
     username: {
       type: String,
     },
-    /*     status: {
+         status: {
       type: String,
     },
     approveDate: {
@@ -70,7 +70,7 @@ const loanSchema = mongoose.Schema(
     },
     activateDate: {
       type: String,
-    }, */
+    }, 
   },
   {
     timestamps: true,
